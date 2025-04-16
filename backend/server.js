@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //Email sende
 app.use(emailHandler);
 app.use(express.json());
+app.use(cors());
 // Connect to MongoDB
 connectDB();
 
