@@ -29,7 +29,7 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
     }
   
     try {
-      const response = await fetch("http://localhost:7000/api/profile", {
+      const response = await fetch("https://my-portfolio-backend2.onrender.com/api/profile", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -67,7 +67,7 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
     setError(""); // Clear any previous errors
     console.log("Sending sign-in request...");
 
-    const response = await fetch("http://localhost:7000/api/auth/signin", {
+    const response = await fetch("https://my-portfolio-backend2.onrender.com/api/auth/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -123,7 +123,7 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
 
     try {
       setError("");
-      const response = await fetch("http://localhost:7000/api/auth/signup", {
+      const response = await fetch("https://my-portfolio-backend2.onrender.com/api/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
