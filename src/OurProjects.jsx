@@ -38,7 +38,7 @@ const OurProjects = ({ onSignIn }) => {
   const handleDownload = (project) => {
     if (isAuthenticated) {
       const link = document.createElement('a');
-      link.href = `${project.downloadLink}`; 
+      link.href = `https://my-portfolio-backend2.onrender.com${project.downloadLink}`;
       link.download = project.title + '.zip'; 
       document.body.appendChild(link);
       link.click();
