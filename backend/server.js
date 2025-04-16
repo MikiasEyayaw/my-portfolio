@@ -10,7 +10,11 @@ import verifyToken from './middleware/authMiddleware.js';
 const app=express();
 const port=process.env.PORT
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://my-portfolio-chi-ten-35.vercel.app', // your Vercel frontend domain
+  credentials: true,
+}));
+
 app.use(express.json());
 // Simulate __dirname in ES Modules
 const __filename = fileURLToPath(import.meta.url);
