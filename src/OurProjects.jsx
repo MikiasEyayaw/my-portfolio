@@ -18,7 +18,7 @@ const OurProjects = ({ onSignIn }) => {
   const loadingProjects=[{id:1,title:"loading projects..."},{id:2,title:"loading projects..."},{id:3,title:"loading projects..."},{id:4,title:"loading projects..."},{id:5,title:"loading projects..."},{id:6,title:"loading projects..."},];
   // Fetch project data from the backend when the component mounts
   useEffect(() => {
-    fetch('http://localhost:7000/api/projects')
+    fetch('https://my-portfolio-backend2.onrender.com/api/projects')
       .then((res) => res.json())
       .then((data) => setProjects(data))
       .catch((err) => console.error('Error fetching projects:', err));
