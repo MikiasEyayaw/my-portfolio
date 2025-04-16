@@ -15,7 +15,7 @@ const ProjectCard = ({ project, onProjectClick, onDownloadClick }) => {
         onClick={() => onDownloadClick(project)} // Open preview when the image is clicked
       >
         <img
-          src={`http://localhost:7000${project.image}`} // Correct path with /public prefix (project.image should not have /public already)
+          src={`https://my-portfolio-backend2.onrender.com${project.image}`} // Correct path with /public prefix (project.image should not have /public already)
           alt={project.title}
           className="w-full h-full object-cover rounded-lg shadow-xl ring-1 ring-slate-900/5"
           
