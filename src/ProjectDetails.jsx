@@ -9,7 +9,7 @@ const ProjectDetails = ({ project, onClose }) => {
       <div className={`bg-white ${theme === 'dark' ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} p-8 rounded-lg shadow-lg max-w-lg w-full`}>
         <h2 className={`text-3xl font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>{project.title}</h2>
         <img
-          src={`http://localhost:7000${project.image}`}
+          src={`https://my-portfolio-backend2.onrender.com${project.image}`}
           alt={project.title}
           className="w-full h-64 object-cover rounded-lg mb-4"
         />
