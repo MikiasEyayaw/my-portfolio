@@ -182,7 +182,7 @@ const Home = ({ user }) => {
       <div className="absolute inset-0 bg-indigo-600 rounded-2xl shadow-lg border border-black" />
       <div className="absolute inset-0 bg-indigo-600 rounded-2xl border border-black blur-lg" />
       <button className="absolute inset-0 flex items-center justify-center text-white text-2xl sm:text-3xl font-extrabold">
-        <a href="http://localhost:7000/files/myCv.doc" download>Download CV</a>
+        <a href="https://my-portfolio-backend2.onrender.com/myCv.doc" download>Download CV</a>
       </button>
     </div>
   </div>
