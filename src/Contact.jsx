@@ -130,7 +130,7 @@ const Contact = () => {
                   </svg>
                 </dt>
                 <dd>
-                  <a className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} hover:text-gray-900`} href="mailto:contact@yourcompany.com">
+                  <a className={`${theme === 'dark' ? 'text-white' : 'text-gray-600'} hover:text-gray-900`} href="mailto:mikiaseyayaw123@gmail.com">
                     mikiaseyayaw123@gmail.com
                   </a>
                 </dd>
