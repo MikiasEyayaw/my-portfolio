@@ -89,11 +89,9 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
 
     // Save the token and fetch profile data
     localStorage.setItem("token", data.token); // Save the token
-
+    setSuccessMessage("Sign-in successful!"); // Set success message after fetching profile
     const user = await fetchProfile(); // Fetch the profile data
-
     if (user) {
-      setSuccessMessage("Sign-in successful!"); // Set success message after fetching profile
       setTimeout(() => {
         setSuccessMessage("");
         onClose(); // Close the modal
