@@ -99,7 +99,7 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
       setTimeout(() => {
         setSuccessMessage("");
         onClose(); // Close the modal
-      }, 3000);
+      }, 1000);
     }
   } catch (err) {
     console.error("Error during sign-in:", err.message);
