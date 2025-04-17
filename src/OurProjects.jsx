@@ -62,7 +62,7 @@ const OurProjects = ({ onSignIn }) => {
   return (
     <div className={`w-full min-h-screen relative ${theme === 'dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-600'} overflow-hidden`} id="ourproject">
       <div className={` text-center text-indigo-900 font-extrabold text-5xl mt-18 ${theme === 'dark' ? 'text-white' : 'text-indigo-900'}`}>
-        Our <span className="text-red-600">Projects</span>
+        My <span className="text-red-600">Projects</span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12 mr-10 ml-10">
