@@ -23,7 +23,7 @@ const OurServices = () => {
     <div className={`w-full min-h-screen ${theme === "dark" ? "bg-gray-900 text-white" : "bg-white text-gray-600"} overflow-hidden flex flex-col items-center py-10`} id="ourservice">
       {/* Section Title */}
       <div className="flex justify-center mb-10 mt-12">
-        <span className={`text-5xl font-extrabold font-['Sen'] mr-2 ${theme === "dark" ? "text-white" : "text-indigo-900"}`}>Our </span>
+        <span className={`text-5xl font-extrabold font-['Sen'] mr-2 ${theme === "dark" ? "text-white" : "text-indigo-900"}`}>My </span>
         <span className="text-red-600 text-5xl font-extrabold font-['Sen']">Services</span>
       </div>
 
