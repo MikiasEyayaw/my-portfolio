@@ -41,8 +41,8 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
       }
   
       const data = await response.json();
-      console.log("Profile Data:", data);
       onSignIn(data.user); // Pass the user data to the parent component
+      return data.user;
     } catch (error) {
       console.error("Error fetching profile data:", error.message);
       setError("Failed to fetch profile data. Please try again.");
@@ -81,7 +81,6 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
     console.log("Response Status:", response.status);
 
     const data = await response.json();
-    console.log("Response Data:", data);
 
     if (!response.ok) {
       setError(data.message || "Login failed.");
@@ -90,7 +89,6 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
 
     // Save the token and fetch profile data
     localStorage.setItem("token", data.token); // Save the token
-    console.log("Token saved to localStorage:", data.token);
 
     const user = await fetchProfile(); // Fetch the profile data
 
