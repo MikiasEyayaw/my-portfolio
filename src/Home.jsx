@@ -44,12 +44,12 @@ const Home = ({ user }) => {
             <a href="#ourservice" className={`hover:text-gray-950 ${
           theme === "dark" ?"hover:text-yellow-600" : "hover:text-gray-950"
         }`}>
-              Our Services
+              My Services
             </a>
             <a href="#ourproject" className={`hover:text-gray-950 ${
           theme === "dark" ?"hover:text-yellow-600" : "hover:text-gray-950"
         }`}>
-              Our Project
+              My Project
             </a>
             <a href="#contactus" className={`hover:text-gray-950 ${
           theme === "dark" ?"hover:text-yellow-600" : "hover:text-gray-950"
@@ -108,7 +108,7 @@ const Home = ({ user }) => {
             } font-extrabold`}
             onClick={() => setIsOpen(false)}
           >
-            Our Services
+            My Services
           </a>
           <a
             href="#ourproject"
@@ -117,7 +117,7 @@ const Home = ({ user }) => {
             } font-extrabold`}
             onClick={() => setIsOpen(false)}
           >
-            Our Project
+            My Project
           </a>
           <a
             href="#contactus"
