@@ -248,8 +248,8 @@ const ProjectModal = ({ onSignIn, onSignUp, onClose, onBack }) => {
             {successMessage && <p className="text-green-500 text-center">{successMessage}</p>}
 
             <input
-              type="text"
-              placeholder="Username"
+              type="email"
+              placeholder="Email"
               className="w-full mb-3 p-3 border rounded-lg dark:bg-indigo-700 dark:text-white"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
