@@ -48,7 +48,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://github.com/MikiasEyayaw"
+            href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
             className={theme === 'dark' ? 'text-gray-400 hover:text-gray-500' : 'text-gray-600 hover:text-gray-700'}
